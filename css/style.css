@@ -504,6 +504,6 @@ footer .social-icon:hover {
 }
 
 html {
-  scroll-padding-top: 80px;
+  scroll-padding-top: 65px;
   scroll-behavior: smooth;
 }
