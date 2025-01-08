@@ -18,30 +18,6 @@ navLinks.forEach((link) => {
   });
 });
 
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const name = event.target.elements.name.value.trim();
-  const email = event.target.elements.email.value.trim();
-  const message = event.target.elements.message.value.trim();
-
-  if (!name || !email || !message) {
-    alert("Por favor, completa todos los campos antes de enviar.");
-    if (!name) document.getElementById("name").style.borderColor = "red";
-    if (!email) document.getElementById("email").style.borderColor = "red";
-    if (!message) document.getElementById("message").style.borderColor = "red";
-    return;
-  }
-
-  // Mostrar mensaje de éxito
-  successMessage.style.display = "block";
-  setTimeout(() => {
-    successMessage.style.display = "none";
-  }, 3000); // Ocultar mensaje después de 3 segundos
-
-  contactForm.reset(); // Limpiar formulario
-});
-
 // Animaciones al hacer hover en los proyectos
 const projectCards = document.querySelectorAll(".project-card");
 
