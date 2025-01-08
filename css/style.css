@@ -502,3 +502,8 @@ footer .social-icon:hover {
     transition: none;
   }
 }
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
